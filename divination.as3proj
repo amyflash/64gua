@@ -52,7 +52,9 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <!-- example: <element path="..." /> -->
+    <element path="res\Suan.swc" />
+    <element path="res\MainMc.swc" />
+    <element path="res\TestMC.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
@@ -85,7 +87,7 @@
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
-    <option testMovie="ExternalPlayer" />
+    <option testMovie="Default" />
     <option testMovieCommand="" />
   </options>
   <!-- Plugin storage -->

@@ -32,12 +32,16 @@
     </define>
     <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>D:\flash\divination\src</path-element>
+      <path-element>D:\flash\divination\64gua\src</path-element>
       <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
+    <library-path append="true">
+      <path-element>D:\flash\divination\64gua\res\Suan.swc</path-element>
+      <path-element>D:\flash\divination\64gua\res\TestMC.swc</path-element>
+    </library-path>
   </compiler>
   <file-specs>
-    <path-element>D:\flash\divination\src\Main.as</path-element>
+    <path-element>D:\flash\divination\64gua\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>30</default-frame-rate>

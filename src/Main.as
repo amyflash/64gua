@@ -2,9 +2,11 @@ package
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.events.MouseEvent;
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
-	import flash.utils.Dictionary;
+	import flash.text.TextFormat;
+	
 	
 	/**
 	 * ...
@@ -66,6 +68,7 @@ package
 		}
 		
 		private var gualist:Array = new Array();
+		private var suan:Suan = new Suan();
 		private function showData(e:Event):void{
 			var data:String = e.currentTarget.data;
 			var t:Array = new Array();
@@ -85,14 +88,45 @@ package
 						"Marriage":t[i + 8],
 						"Decision":t[i + 9]
 					};
+					
+					
 						gualist[t[i + 10]] = t1;
+						
 				}
 				
-			var gua:String = OneGua();
-			trace(JSON.stringify(gualist[gua]));
-				
-			}
+			
+			
+			addChild(suan);
+			suan.addEventListener(MouseEvent.CLICK, doSuan);
 		}
+			
 		
+		private var mc:TestMC = new TestMC();
+		private function doSuan(e:MouseEvent):void{
+			suan.visible = false;
+			var gua:String = OneGua();
+			//trace(gua);
+			
+			var onemc:OneguaMC = new OneguaMC(gua);
+			
+			mc.guamc.addChild(onemc);
+			addChild(mc);
+			onemc.width = 100;
+			onemc.height = 100;
+			var temp:Object = gualist[gua];
+			mc.t1.text = temp["Title"];
+			mc.t2.text = temp["Type"];
+			
+			var tf:TextFormat = new TextFormat();
+			tf.size = 16;
+			tf.color = 0x000000;
+			mc.t3.setStyle("textFormat", tf);
+			
+			mc.t3.text = temp["Xiangyue"]+"\n\n"+temp["Intro"]+"\n\n"+temp["Career"]+"\n\n"+temp["Business"]+"\n\n"+temp["Fame"]+"\n\n"+temp["Travel"]+"\n\n"+temp["Marriage"]+"\n\n"+temp["Decision"];
+			
+			//trace(JSON.stringify(gualist[gua]));
+		}
 	}
+		
+}
 	
