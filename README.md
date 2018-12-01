@@ -3,6 +3,6 @@
 
 将bin目录拷贝到服务器根目录下访问即可看到对应flash版本界面
 
-html5目录下为layaair生成的html版本
+html5目录下为由layaair生成的html版本
 
 
