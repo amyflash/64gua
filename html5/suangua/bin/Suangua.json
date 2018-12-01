@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":375,"height":667},"compId":2,"child":[{"type":"Sprite","props":{"y":259,"x":75,"var":"suan","texture":"suangua/Suan.png"},"compId":3}],"loadList":["suangua/Suan.png"],"loadList3D":[],"components":[]}
