@@ -1,0 +1,15 @@
+/* styles.css */
+#container {
+    text-align: center;
+}
+
+#gua-display {
+    margin-top: 20px;
+}
+
+   #suan {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        font-size: 20px;
+    }
