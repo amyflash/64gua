@@ -5,7 +5,7 @@
 
 html5目录下为由layaair生成的html版本
 
-aijs目录下为通义灵码生成的html5版本，as3 to js 太爽了
+aijs目录下为通义灵码生成的html5版本，利用大模型能力让 as3 to js 太爽了
 
 作者联系方式: nbllq@qq.com
 
